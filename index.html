@@ -47,12 +47,12 @@
 									is in software engineering, I also have ample experience in web design and game programming.
 									In my free time I like to work on programming and non-programming projects. I work as a 
 									lab technician in the makerspace engineering labs at Indiana Univeristy. As a certified lab technician, I like to spend my free time
-									in the lab working on engineering projects. You can read about them more
+									in the lab working on various engineering and art projects. You can read about them more
 									<a href="#work"> <font color="blue" >here</font></a>. To find out more about some of my programming projects, click 
 									<a href="#projects"><font color="blue" >here</font></a></a>.</p>
 
 									<span class="image main"><img src="images/Painting.jpg" alt="" /></span>
-									<p>I also like to paint</p>
+									<p>I am also an avid painter</p>
 							</article>
 
 							<article id="work">
@@ -84,6 +84,36 @@
 								
 								<p>Here are some programming projects that I have made. More projects soon to come! 
 								</p>
+
+								<h3 class="major">IOS Binary Calculator with MVC</h3>
+								<span class="image main"><img src="images/CalculatorView.png" alt="" /></span>
+								<p>Originally, I chose to do this project because I wanted to create a unique challenge for myself.
+									What if I took one of the most common beginner programming project, and tackled it from the persepective
+									of an experienced programmer? That's why I decided to add several new features such as the model view controller
+									pattern, memory operations, and to make it binary for a little extra spice. This app is available for download on github
+									<a href="https://github.com/JasontheMai/IOS-MVCBinaryCalculator"><font color="blue"> here</font></a>. While it is configured for 
+									the Iphone SE, it can easily be ported to other devices.
+								</p>
+								<span class="image main"><img src="images/HistoryView.png" alt="" /></span>
+
+								<h4 class="major">Technical details</h4>
+								<p>
+									First, I started implementing the overall system design of this project. I decided that I would use the
+									model view controller pattern to make it easier to debug and expand new features. Thus, I started by creating
+									 a tabbed view controller that contains the history view controller which controls the history view and 
+									the calculator view controller which controls the calculator view. These view controllers take user inputs from the views that 
+									the user interacts with, processes them, and also sends them to the unified model that would return information to these view controllers.
+									The tabbed view controller allowed for smooth transitions between the views for the user. Since both view controllers were reliant on the model
+									however, I had to make sure they only worked on a singular instance of the model they both had access to. To fix this issue, I created a singleton of the
+									model in the appDelegate class that both view controllers had references to. The workflow of this program is that the user interacts with the calculator view, 
+									where data is collected in the calculator view controller, sent to the model to be processed, then it is sent to the history view controller which displays the 
+									processed information in the history view. During this process, the user's inputs that are sent in through the model are also returned to the calculator view
+									to create a responive and reactive feed back system. The only thing left, was to implement the actual calculations which was pretty easy. The memory operations
+									would store whatever is currently in the text field to a variable in the calculator view controller which sends it to the model to be processed. For the math 
+									operations, I simply created a function to convert the numbers to decimal form, perform the operation, then converted it back to decimal.
+								</p>
+
+
 
 								<h3 class="major">Crowley and the Cheese Covenant</h3>
 								<span class="image main"><img src="images/DungeonExample.jpg" alt="" /></span>
@@ -134,6 +164,15 @@
 									index of te 2D array and tries a different solution. This process is repeated until all tree branches and roots are exhausted, or the last index is filled.
 									In the case of the former, this is when the algorithm determines that the puzzle is unsolvable.
 								</p>
+
+								<!-- <h3 class="major">Websites</h3>
+								<span class="image main"><img src="images/recipe.png" alt="" /></span>
+								<p>Here are a short collections of websites I have created from scratch. I would like to one day recreate this website from scratch as well. I
+									will periodicly update this list with other websites I have created.
+								</p>
+								<h4 class="major">Pasta Puttancesca</h4>
+								<p>Here a a short website that shows off a website based off of </p> -->
+
 							
 
 				
