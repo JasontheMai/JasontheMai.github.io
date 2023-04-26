@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    I360 Web Design Template
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jason Mai</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="index.html"><i class="fa fa-fw fa-home"></i> About</a>
+            <a href="projects.html" style="background-color: #588157;"><i class="fa fa-cogs" aria-hidden="true"></i> Projects</a>
+            <a href="work.html"><i class="fa fa-code" aria-hidden="true"></i> Work</a>
+            <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            <a href="images/Resume.pdf"><i class="fa fa-file-text" aria-hidden="true"></i> Resume</a>
+
+        </nav>
+
+        <h1>NeuroTrack</h1>
+        <h2>Still in development, coming soon!</h2>
+        <i class="fa fa-code-fork" aria-hidden="true"></i>
+        <i class="fa fa-github" aria-hidden="true"></i>
+
+        <p>Tags: Swift, Model View Controller pattern, IOS programming, object oriented programming and data analysis</p>
+        <p>NeuroTrack is an IOS app I developed in collaberation with Darrion Shack. This app uses the IOS Core Motion, Core Data,
+            and Swift Graph APIs to track, analyze, and model the tremors and gait patterns of patients with Parkinson's disease
+            to see how their symptoms are changing over time.
+        </p>
+
+        <h2>Technical Details</h2>
+        <p>This program is implemented using the Model View Controller design pattern. The view is the interface the user interacts
+            with, the controller sends user input to the model, and the model serves as central database for all the data collected. The
+            model also analyzes the data by finding the standard deviation of the data over a set period of time to understand the progression
+            of their symptoms.
+            The patient data is collected by using Core Motion's APIs to access the IPhone's pedometer, gyroscope, and 
+            accelerometer. Persistant storage is handled using the Core Data API to save user data and Swift Graph is used to graph the data
+            after it has been processed in the model.
+        </p>
+
+
+
+</div>
+
+
+
+    <!-- javascript stuff -->
+
+
+</body>
+
+</html>

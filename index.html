@@ -1,445 +1,93 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
 <!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    I360 Web Design Template
 -->
-<html>
-	<head>
-		<title>Jason Mai</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		
-			<div id="wrapper">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jason Mai</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-		
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-gem"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Jason Mai</h1>
-								<p>Aspiring Software Engineer at Indiana University</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#about">About</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#projects">Projects</a></li>
-								<li><a href="#contact">Contact</a></li>
-							</ul>
-						</nav>
-					</header>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-					<div id="main">
+    <!-- slick javascript library -->
+    <link rel="stylesheet" type="text/css" href="plugins/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="plugins/slick-1.8.1/slick/slick-theme.css" />
 
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/Butterfly.jpeg" alt="" /></span>
-								<p>Hello! My name is Jason Mai and I am a sophomore studying computer science at Indiana University. While my degree specialization
-									is in software engineering, I also have ample experience in web design and game programming.
-									In my free time I like to work on programming and non-programming projects. I work as a 
-									lab technician in the makerspace engineering labs at Indiana Univeristy. As a certified lab technician, I like to spend my free time
-									in the lab working on various engineering and art projects. You can read about them more
-									<a href="#work"> <font color="blue" >here</font></a>. To find out more about some of my programming projects, click 
-									<a href="#projects"><font color="blue" >here</font></a></a>.</p>
+</head>
 
-									<span class="image main"><img src="images/Painting.jpg" alt="" /></span>
-									<p>I am also an avid painter</p>
-							</article>
+<body>
 
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/Makerspace.png" alt="" /></span>
-								 <p>A download link to my resume can be found
-								<a href="images/Resume.pdf"><font color="blue" >here</font></a></a>.</p>
-								<p>I have been working as a certified lab technician at the makerspace engineering labs at Indiana University since November 2021.
-									My usual duties include machine repairs, helping students, researchers, and professors with their varying projects, and organizing and
-									giving workshops for different organizations and classes. As a part of my job, I am proficent in laser cutting/engraving, 
-									vinyl cutting, heat presses, soldering, 3D printing and other engineering tools and machines.
-									I am also familiar with the software used to operate these machines including Job Control, Roland Cut Studios, Adobe Illustrater,
-									Autodesk Inventor, and TinkerCAD. An example of a workshop I have led was an illuminable name plate workshop I hosted for
-									students in INFO-Y 101 where I taught students how to use computer aided design software to
-									model an illuminable name plate that we spliced and then 3D printed. The goal of this workshop was to help familiarize students
-									with computer aided design and to make them more comfortable with using the engineering labs.</p>
-								<span class="image main"><img src="images/Bulbasaur.jpg" alt="" /></span>
-								<p>Here is a Bulbasaur I 3D printed, painted, and decorated with a succulent</p>
-								<span class="image main"><img src="images/Cutie.jpg" alt="" /></span>
-								<p>This is a piece of birch I modeled on Adobe Illustrator that I laser cutted and engraved of my girlfriend and I</p>
-								<span class="image main"><img src="images/Chess.jpg" alt="" /></span>
-								<p>Here are several chess sets I made for a chess tournament I was running. I laser cutted and engraved acrylic to make the boards and I used TinkerCAD
-									to model and 3D print the pieces
-								</p>
-							</article>
+    <div class="container">
+        <nav>
+            <!--I know inline css is bad but this is litterally the only time I will use this code hence it is here-->
+            <a href="index.html" style="background-color: #588157;"><i class="fa fa-fw fa-home"></i> About</a>
+            <a href="projects.html"><i class="fa fa-cogs" aria-hidden="true"></i> Projects</a>
+            <a href="work.html"><i class="fa fa-code" aria-hidden="true"></i> Work</a>
+            <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            <a href="images/Resume.pdf"><i class="fa fa-file-text" aria-hidden="true"></i> Resume</a>
 
-							<article id="projects">
-								<h2 class="major">Projects</h2>
-								
-								<p>Here are some programming projects that I have made. More projects soon to come! 
-								</p>
-
-								<h3 class="major">IOS Binary Calculator with MVC</h3>
-								<span class="image main"><img src="images/CalculatorView.png" alt="" /></span>
-								<p>Originally, I chose to do this project because I wanted to create a unique challenge for myself.
-									What if I took one of the most common beginner programming project, and tackled it from the persepective
-									of an experienced programmer? That's why I decided to add several new features such as the model view controller
-									pattern, memory operations, and to make it binary for a little extra spice. This app is available for download on github
-									<a href="https://github.com/JasontheMai/IOS-MVCBinaryCalculator"><font color="blue"> here</font></a>. While it is configured for 
-									the Iphone SE, it can easily be ported to other devices.
-								</p>
-								<span class="image main"><img src="images/HistoryView.png" alt="" /></span>
-
-								<h4 class="major">Technical details</h4>
-								<p>
-									First, I started implementing the overall system design of this project. I decided that I would use the
-									model view controller pattern to make it easier to debug and expand new features. Thus, I started by creating
-									 a tabbed view controller that contains the history view controller which controls the history view and 
-									the calculator view controller which controls the calculator view. These view controllers take user inputs from the views that 
-									the user interacts with, processes them, and also sends them to the unified model that would return information to these view controllers.
-									The tabbed view controller allowed for smooth transitions between the views for the user. Since both view controllers were reliant on the model
-									however, I had to make sure they only worked on a singular instance of the model they both had access to. To fix this issue, I created a singleton of the
-									model in the appDelegate class that both view controllers had references to. The workflow of this program is that the user interacts with the calculator view, 
-									where data is collected in the calculator view controller, sent to the model to be processed, then it is sent to the history view controller which displays the 
-									processed information in the history view. During this process, the user's inputs that are sent in through the model are also returned to the calculator view
-									to create a responive and reactive feed back system. The only thing left, was to implement the actual calculations which was pretty easy. The memory operations
-									would store whatever is currently in the text field to a variable in the calculator view controller which sends it to the model to be processed. For the math 
-									operations, I simply created a function to convert the numbers to decimal form, perform the operation, then converted it back to decimal.
-								</p>
+        </nav>
 
 
 
-								<h3 class="major">Crowley and the Cheese Covenant</h3>
-								<span class="image main"><img src="images/DungeonExample.jpg" alt="" /></span>
-								<p>
-									Crowley and the Cheese Covenant is an advernture platforming game where you help navigate Crowley out of a dungeon while collecting
-									cheese to power the teleporters and also avoiding deadly traps! This game features animations, a story, cutscenes, 8 levels, and takes around
-									30 minutes to beat. Link to a 
-									<a href="images/BackupCrowley.zip"><font color="blue" >downloadable version</font></a></a>.
-									Link to the
-									<a href="https://github.com/JasontheMai/Project-Crowley"><font color="blue" >github repository</font></a></a>.
-									 Use this itch.io 
-									<a href="https://jasonthemai.itch.io/crowley-and-the-cheese-covanent"><font color="blue" >link</font></a></a>
-									link to play the game online without downloading it.
-									The downloadable version runs the best by the way.
-									</p>
+        <h1 class="centerH1">About</h1>
 
-									<span class="image main"><img src="images/Story.jpg" alt="" /></span>
-								</p>
-								<h4 class="major">Technical details</h4>
-									<p>Game objects, levels, and cutscenes were all handled via C# scripts. Linear traps, the ones that only move in one dimension, were created
-										by taking advantage of either cosine or sine waves in conjunction with linear interpolation. I first determined the end position coordinates for
-										each trap and then had a variable that served as the x and y coordinates of the trap. This variable would constantly be updating the
-										position of the trap by matching it's value to the constantly changing trigonometric waves. This variable would interpolate between these two end
-										points by "riding" the trigonometric waves since these waves are always fluxuating between -1 and 1. These traps can be moved in reverse by simply multiply
-										the result of these waves by negative one before setting the positioning variable to the wave. A similar effect was used to create the circular traps however
-										these traps did not use linear interpolation but just trigonometric waves but this time the variable used the trigonometric waves for both its x and y coordinates
-										rather than just one like the linear traps. Both the levels system and dialogue system were implemented by storing information in an array that was constantly
-										being updated and parsed to retrieve the correct information to smoothly move from level to level and dialogue to dialogue.
-									</p>
+        <p>Hello! My name is Jason Mai and I am an aspiring software engineer at Indiana University. I'm currently studying 
+            computer science with a minor in data science.
+            While my primary field of study is software engineering, I do have plenty of experience in other areas like
+            mobile app development, game design, and front-end work.
+            I am currently working as a lab technician at the
+            <a href="https://makerspaces.luddy.indiana.edu/" class="hvr-sweep-to-top">
+                Indiana University Makerspace Engineering Labs
+            </a> and over the summer I am interning for the
+             <a href="https://www.dfas.mil/" class="hvr-sweep-to-top"> Department of Defense's Financial and Accounting Service</a> as an IT intern.
 
-								<h3 class="major">Sudoku Solver</h3>
-								<span class="image main"><img src="images/Sudoku.jpg" alt="" /></span>
-								<p>This program takes a sudoku problem in the form of a text file and solves it using backtracking and recursion in a tree structure. Complete
-									with JUnit testing and a few example problems. This algorithm can solve a sudoku problem with any dimensions as long as it is a perfect square 
-									(even a 400x400 board! That is if you're willing to wait a while). This program works by reading text files like this
+        </p>
 
-									<span class="image main"><img src="images/SudokuExample.jpg" alt="" /></span>
-									where the first number indicates the dimensions of the puzzle and the dots represent empty spaces. You can find the code
-									<a href="https://github.com/JasontheMai/SudokuSolver"><font color="blue" >here</font></a></a>.
-									
-								</p>
-								<h4 class="major">Technical details</h4>
-								<p>A internal 2D array is instaniated at runtime to create a platform for the algorithm to attempt to solve the puzzle. 
-									If the algorithm managed to get to the last index of the 2D array, then the puzzle is deemed solvable and fed to another algorithm
-									that prints out the first solution obtained. The algorithm works by essentially turning every possible solution into a tree and after
-									every attempted insertion, it checks if that was a legal insertion into the puzzle. If not, the algorithm moves onto another branch of the
-									tree to try another possible insertion. If no insertions are possible at this level, the algorithm moves up the tree by going to the previous
-									index of te 2D array and tries a different solution. This process is repeated until all tree branches and roots are exhausted, or the last index is filled.
-									In the case of the former, this is when the algorithm determines that the puzzle is unsolvable.
-								</p>
+        <div class="carousel">
+            <div> <img id="butterfly" src="images/lake.JPG" alt="Picture of me one a lake"> </div>
+            <div> <img id="butterfly" src="images/log.jpg" alt="Picture of me in the forest"> </div>
+            <div> <img id="caveman" src="images/tree.png" alt="Picture of me siting on a tree">
+            </div>
+            <div> <img id="painting" src="images/Painting.jpg" alt="A portrait of a cat I drew">
+                <h4>I also love to paint!</h4>
+            </div>
+            
+        </div>
+    </div>
+    <!-- javascript stuff -->
+    <!-- <script src="js/nav.js"></script> -->
 
-								<!-- <h3 class="major">Websites</h3>
-								<span class="image main"><img src="images/recipe.png" alt="" /></span>
-								<p>Here are a short collections of websites I have created from scratch. I would like to one day recreate this website from scratch as well. I
-									will periodicly update this list with other websites I have created.
-								</p>
-								<h4 class="major">Pasta Puttancesca</h4>
-								<p>Here a a short website that shows off a website based off of </p> -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="plugins/slick-1.8.1/slick/slick.min.js"></script>
 
-							
+    <!-- slick javascript library -->
+    <script type="text/javascript">
 
-				
+    $(document).ready(function () {
+    $('.carousel').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        infinite: true
+    });
+});
 
-							</article>
 
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<p>This page is currently a work in progress. The form is currently not operational. In the future, I plan on
-								creating a server that will store user inputs. For now, if you would like to reach me,
-									don't hesitate to email me at 02700jasonmai@gmail.com or call me at 260-467-4618
-								</p>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								
-							</article>
+    </script>
 
-							<article id="elements">
-								<h2 class="major">Elements</h2>
+</body>
 
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
-
-					</div>
-
-					<footer id="footer">
-						
-					</footer>
-
-			</div>
-
-			<div id=""></div>
-
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
 </html>

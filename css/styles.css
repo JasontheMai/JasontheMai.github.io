@@ -1,0 +1,390 @@
+/* natural box model */
+html {
+  box-sizing: border-box;
+  
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* UTILITIES */
+
+/* hides an element on screen, but not from screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* no break */
+.nobr {
+  white-space: nowrap;
+}
+
+
+.crowleyImg{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.centerH1{
+  text-align: center;
+}
+
+body {
+  background-color: #344e41;
+  color: #dad7cd;
+}
+
+.container{
+  width: 75%;
+  margin: auto;
+  
+}
+h1{
+  padding-top: 20px;
+  font-size: 38px;
+}
+p{
+  font-size: 20px;
+}
+
+/* Centers the image and makes it darker */
+
+
+/* #butterfly{
+  width: 40%;
+  filter: brightness(0.8);
+}
+#caveman{
+  width: 40%;
+}
+#painting{
+  width: 40%;
+} */
+
+.portrait, .potter, .duck{
+  width: fit-content;
+  height: auto;
+}
+
+
+
+.carousel div img {
+  max-width: 40%;
+  height: auto;
+  margin: auto;
+}
+.carousel div h4 {
+  text-align: center;
+}
+
+.slick-prev {
+  left: 50px !important;
+  z-index: 100 !important;
+}
+
+.slick-next {
+  right: 50px !important;
+}
+
+#mapDFAS, #mapLab {
+  height: 400px;
+  width: auto;
+  margin-bottom: 80px;
+  margin-top: 30px;
+}
+
+
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+figure {
+  background: #344e41;
+  color: #dad7cd;
+}
+figcaption{
+  text-align: center;
+  font-size: 22px;
+}
+
+
+.projectsFlex {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 40px;
+}
+
+.innerFlexProject {
+  flex: 1;
+  height: 25%;
+  width: 25%;
+
+}
+
+.innerFlexProject a img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+
+
+
+.wideContainer{
+  width: 90%;
+  margin: auto;
+}
+
+/*!
+* Hover.css (http://ianlunn.github.io/Hover/)
+* Version: 2.3.2
+* Author: Ian Lunn @IanLunn
+* Author URL: http://ianlunn.co.uk/
+* Github: https://github.com/IanLunn/Hover
+
+* Hover.css Copyright Ian Lunn 2017. Generated with Sass.
+*/
+/* 2D TRANSITIONS */
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+
+
+
+/* Link in normal state */
+a {
+  color: #A3B18A;
+  text-decoration: underline;
+}
+
+/* Link when hovered */
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* Link when clicked */
+a:active {
+  color: #588157;
+  text-decoration: none;
+}
+
+/* Link when it has been visited */
+a:visited {
+ 
+}
+
+
+/* css for the nav and the navbar links */
+nav{
+  width: 75%;
+  padding-top: 20px;
+  font-size: 20px;
+  top: 10px;
+  margin: auto;
+  padding-bottom: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  z-index: 100;
+}
+
+nav a{
+  padding-top: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+
+
+
+
+
+td{
+  padding-left: 40px;
+  padding-top: 50px;
+}
+td a{
+  padding-right: 10px;
+}
+
+.contactsPage td{
+  font-size: 20pt;
+}
+
+
+.contactsPage {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+}
+
+.tableC, .formC {
+  flex: 1;
+}
+
+.formC {
+  margin-left: 20px;
+}
+
+
+.workFlex{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+}
+
+.workFlex .carousel{
+  width: 60%;
+  text-align: center;
+}
+
+
+#centerH2{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 26px;
+}
+
+
+
+.leaflet-popup-content {
+  text-align: center;
+}
+
+.work h1{
+  text-align: center;
+  font-size: 36px;
+}
+
+.fa{
+  font-size: 22px !important;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* made my own default media query*/
+@media (min-width: 0px){
+  .workFlex{
+    flex-direction: column;
+  }
+  .workFlex .slick-slider{
+    margin: 0 auto;
+  }
+  .contactsPage{
+    flex-direction: column;
+  }
+  .formC{
+    padding-top: 20px;
+  }
+  .projectsFlex{
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 50%;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .workFlex{
+    flex-direction: column;
+  }
+  .workFlex .slick-slider{
+    margin: 0 auto;
+  }
+  .contactsPage{
+    flex-direction: column;
+  }
+  .formC{
+    padding-top: 20px;
+  }
+  .projectsFlex{
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 50%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .workFlex{
+    flex-direction: column;
+  }
+  .contactsPage{
+    flex-direction: column;
+  }
+  .contactsPage{
+    flex-direction: column;
+  }
+  .formC{
+    padding-top: 20px;
+  }
+  .projectsFlex{
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .workFlex{
+    flex-direction: row;
+  }
+  .contactsPage{
+    flex-direction: row;
+  }
+  .projectsFlex{
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .workFlex{
+    flex-direction: row;
+  }
+  .contactsPage{
+    flex-direction: row;
+  }
+  .projectsFlex{
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+}

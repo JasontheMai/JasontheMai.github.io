@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    I360 Web Design Template
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jason Mai</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="index.html"><i class="fa fa-fw fa-home"></i> About</a>
+            <a href="projects.html" style="background-color: #588157;"><i class="fa fa-cogs" aria-hidden="true"></i> Projects</a>
+            <a href="work.html"><i class="fa fa-code" aria-hidden="true"></i> Work</a>
+            <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            <a href="images/Resume.pdf"><i class="fa fa-file-text" aria-hidden="true"></i> Resume</a>
+
+        </nav>
+
+        <h1>Project Crowley</h1>
+        <p>Tags: C#, Unity, game design</p>
+        <a href="https://github.com/JasontheMai/Project-Crowley"><i class="fa fa-github"
+            aria-hidden="true"></i></a>
+    <a href="https://jasonthemai.itch.io/crowley-and-the-cheese-covanent"><i class="fa fa-gamepad"
+            aria-hidden="true"></i></a>
+            <a href="images/BackupCrowley.zip"><i class="fa fa-download" aria-hidden="true"></i></a>
+
+        <img class="crowleyImg" src="images/DungeonExample.jpg" alt="An example level of my video game">
+        <p>Project Crowley is an story based action adventure platforming game I developed using C# with the Unity engine.
+            The game features 8 levels, cutscenes, animations, and a wide variety of obsticles and enemies. It will take the average player
+            about 1 hour to beat. You can play the game online <a href="https://jasonthemai.itch.io/crowley-and-the-cheese-covanent">here</a>
+            or download it <a href="images/BackupCrowley.zip">here</a>.
+        </p>
+        <img class="crowleyImg" src="images/Story.jpg" alt="A cutscene in my game">
+        <h2>Technical Details</h2>
+        <p> I utilized C# scripts to handle the creation, state, and manipulation of game objects, levels, and cutscenes in my video game.
+            I created a object factory system where I programmed an abstract base class for every object to inherit and make changes to.
+            For example, traps of the same type inherited the same class but would have slight changes in implementation to give it a unique behavior depending 
+            on the situation. Even the character the player controls has it's own factory. To make the player go from level to level, the
+            Unity engine first destorys everythin in the level then load the next leve. Thus, in order to preserve data from level to level,
+             a new player object is generated from the factory that inherits data from the previous player object.
+
+            For the movement system of the player and obstacles, I took advantage of linear interpolation techniques to create 
+            dynamic fluxuating movement patterns for the player and obstacles. I used this in conjunction trigometric waveforms to simulate linear interpolation
+            by taking advantage of the fact that the unit circle fluxuates between -1 and 1. I can then use the unit circle as a scalar
+            for manipulating objects along a predetermined constant. 
+        </p>
+
+
+      
+
+
+</div>
+
+
+
+    <!-- javascript stuff -->
+
+
+</body>
+
+</html>

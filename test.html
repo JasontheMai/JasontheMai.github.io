@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    I360 Web Design Template
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jason Mai</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- slick javascript library -->
+        <link rel="stylesheet" type="text/css" href="plugins/slick-1.8.1/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="plugins/slick-1.8.1/slick/slick-theme.css" />
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="index.html"><i class="fa fa-fw fa-home"></i> About</a>
+            <!--I know inline css is bad but this is litterally the only time I will use this code hence it is here-->
+            <a href="projects.html" style="background-color: #588157;"><i class="fa fa-cogs" aria-hidden="true"></i>
+                Projects</a>
+            <a href="work.html"><i class="fa fa-code" aria-hidden="true"></i> Work</a>
+            <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            <a href="images/Resume.pdf"><i class="fa fa-file-text" aria-hidden="true"></i> Resume</a>
+
+        </nav>
+
+        <h1>Projects</h1>
+
+
+        <div class="carousel">
+            <div> <a href="NeuroTrack.html">
+                    <figure class="hvr-grow">
+                        <figcaption>NeuroTrack</figcaption>
+                        <img src="images/NeuroTrackLogo.jpg" alt="NeuroTrack an IOS app I developed">
+                        <figcaption id="projectIcons">
+                            <i class="fa fa-code-fork" aria-hidden="true"></i>
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </figcaption>
+                    </figure>
+                </a> </div>
+            <div> <a href="ProjectCharlie.html">
+                    <figure class="hvr-grow">
+                        <figcaption>Project Crowley</figcaption>
+                        <img src="images/CrowleyLogo.png"
+                            alt="Project Crowley, a video game I programmed and published">
+                        <figcaption id="projectIcons">
+                            <a href="images/Project-Crowley-main.zip"><i class="fa fa-code-fork"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://github.com/JasontheMai/Project-Crowley"><i class="fa fa-github"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://jasonthemai.itch.io/crowley-and-the-cheese-covanent"><i
+                                    class="fa fa-gamepad" aria-hidden="true"></i></a>
+                        </figcaption>
+                    </figure>
+                </a> </div>
+            <div> <a href="sudoku.html">
+                    <figure class="hvr-grow">
+                        <figcaption>Nth dimension Sudoku Solver</figcaption>
+                        <img src="images/sudokuIcon.jpg" alt="A sudoku solver I made">
+                        <figcaption>
+                            <a href="images/SudokuSolver-main.zip"><i class="fa fa-code-fork"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://github.com/JasontheMai/SudokuSolver"><i class="fa fa-github"
+                                    aria-hidden="true"></i></a>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div> <a href="website.html">
+                    <figure class="hvr-grow">
+                        <figcaption>This Website</figcaption>
+                        <img src="images/lake.JPG" alt="This Website!">
+                        <figcaption>
+                            <a href="images/SudokuSolver-main.zip"><i class="fa fa-code-fork"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://github.com/JasontheMai/SudokuSolver"><i class="fa fa-github"
+                                    aria-hidden="true"></i></a>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+
+
+
+
+        </div>
+
+        </div>
+
+
+
+        <!-- javascript stuff -->
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="plugins/slick-1.8.1/slick/slick.min.js"></script>
+
+        <!-- slick javascript library -->
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+                $('.carousel').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    dots: true,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
+            });
+
+
+        </script>
+
+</body>
+
+</html>

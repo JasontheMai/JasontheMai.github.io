@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    I360 Web Design Template
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jason Mai</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="index.html"><i class="fa fa-fw fa-home"></i> About</a>
+            <a href="projects.html" style="background-color: #588157;"><i class="fa fa-cogs" aria-hidden="true"></i> Projects</a>
+            <a href="work.html"><i class="fa fa-code" aria-hidden="true"></i> Work</a>
+            <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            <a href="images/Resume.pdf"><i class="fa fa-file-text" aria-hidden="true"></i> Resume</a>
+
+        </nav>
+
+        <h1>Portfolio Website</h1>
+
+        <p>I created this website as a means of showcasing my technical skills and resume, while also showing a bit of my
+            character and personality. It also serves as a sources page in case you're interested in the
+            frameworks, APIs, and libraries I've used. 
+            This page is more for those curious on how I created this website. I'll only be covering the more technical side of
+            things as there is a lot to cover.
+            This website was a blast to make and I look forward 
+            to regularly updating it. 
+        </p>
+      
+        <h2>Technical Details</h2>
+
+        <h3>Contact Form</h3>
+        <img src="images/form.png" alt="Image of the form I used" style="width: 50%;">
+
+        <p>I created the contact form by creating a bunch of text fields that would send data using the 
+            <a href="https://formspree.io">Formspree</a> API to send the data to my email. The Formspree
+            would scour the HTML for tags that matches what its looking for. It then parses the message and sends it
+            to my email. In the future I could use
+            the Google Captcha API to prevent bots from sending things to my email but the Formspree API was hard enough
+        to set up. For now, please dont spam me &#129402;</p>
+
+        <h3>Interactive Maps</h3>
+        <img src="images/maps.png" alt="Picture of the map I created" style="width: 70%;">
+        <p>To create the interactive maps on the work page, I used the <a href="https://leafletjs.com/index.html">leaflet
+            javascript library.
+        </a> Using this library, I created several pins and event handlers to create custom messages and add a little extra
+        interactive element to my website. This library works by creating map objects from a map object that you can modify
+        with different attributes. You can then attach pin objects to the map object and give those pins messages or even create event listeners
+        to make them pop up under specific conditions. I just made an initial pop up so that the user knows that the map is interactive
+        and I made a few more event listeners to show where the coordinates the user clicked or to display a message about the place
+        they clicked.
+        </p>
+
+        <h3>Autoscrolling gallery</h3>
+        <img src="images/carousel.png" alt="picture of the image carousel I used" style="align-items: center; width: 70%;">
+        <p>I created the autoscrolling gallery on my about and work page by using the <a href="https://kenwheeler.github.io/slick/">
+            Slick JavaScript Library.
+        </a>I would definitely recommend against using it however as the API was very difficult and the documentation was sparse.
+    After a lot of trial and error I managed to get the carousels working. This library works similar to the Formspree
+    framework in that it searchs through your html code to find tags that match a specific condition you're looking for.
+    It then creates a carousel of the object that you can modify by changing the attributes of the carousel generated.
+    For this website I choose to implement an autoscrolling feature and arrows so that you could 
+    manually scroll through the images if you wanted. I did this by changing the values of the carousel object created.
+
+    </p>
+
+
+</div>
+
+
+
+    <!-- javascript stuff -->
+
+
+</body>
+
+</html>
