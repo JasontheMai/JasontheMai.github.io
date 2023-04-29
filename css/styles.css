@@ -21,12 +21,19 @@ html {
   border: 0;
 }
 
+
 /* no break */
 .nobr {
   white-space: nowrap;
 }
 
+/* Changes the font to  Noto Sans Japanese*/
+*{
+  font-family: 'PT Sans', sans-serif;
+}
 
+
+/* Resizes the crowley image*/
 .crowleyImg{
   width: 50%;
   display: block;
@@ -35,20 +42,31 @@ html {
   padding-bottom: 20px;
 }
 
+/* creates a unique container for the index page */
+.containerIndex{
+  width: 65%;
+  margin: auto;
+}
+
+
+/* centers the header*/
 .centerH1{
   text-align: center;
 }
-
+/*Changes background and font color*/
 body {
   background-color: #344e41;
   color: #dad7cd;
 }
+/*General container for most pages*/
 
 .container{
-  width: 75%;
+  width: 80%;
   margin: auto;
   
 }
+/*Changes h1 and p padding and font*/
+
 h1{
   padding-top: 20px;
   font-size: 38px;
@@ -59,23 +77,12 @@ p{
 
 /* Centers the image and makes it darker */
 
-
-/* #butterfly{
-  width: 40%;
-  filter: brightness(0.8);
-}
-#caveman{
-  width: 40%;
-}
-#painting{
-  width: 40%;
-} */
-
 .portrait, .potter, .duck{
   width: fit-content;
   height: auto;
 }
 
+/*Modify Carousel positioning*/
 
 
 .carousel div img {
@@ -86,6 +93,7 @@ p{
 .carousel div h4 {
   text-align: center;
 }
+/*important tag is required here*/
 
 .slick-prev {
   left: 50px !important;
@@ -96,6 +104,8 @@ p{
   right: 50px !important;
 }
 
+/*Modifies the layout of the 2 maps*/
+
 #mapDFAS, #mapLab {
   height: 400px;
   width: auto;
@@ -103,6 +113,8 @@ p{
   margin-top: 30px;
 }
 
+
+/*Adds a flex box and changes the postitioning of the projects page*/
 
 .gallery {
   display: flex;
@@ -139,6 +151,7 @@ figcaption{
 }
 
 
+/*Unique container for certain pages*/
 
 
 .wideContainer{
@@ -230,6 +243,7 @@ nav a{
 
 
 
+/*adjusts the table on the contacts page*/
 
 td{
   padding-left: 40px;
@@ -251,6 +265,9 @@ td a{
   flex-flow: row nowrap;
 }
 
+
+/*Creates a flexbox for the contact page for media queries*/
+
 .tableC, .formC {
   flex: 1;
 }
@@ -259,6 +276,8 @@ td a{
   margin-left: 20px;
 }
 
+
+/*Creates a flexbox for the contact page for the work pages to work with media queries*/
 
 .workFlex{
   display: flex;
@@ -297,7 +316,10 @@ td a{
 
 /* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
 /* Extra small devices (portrait phones, less than 576px)
-No media query for `xs` since this is the default */
+No media query for `xs` since this is the default 
+
+Most of these change the flex to columns when the window is smaller
+*/
 
 /* made my own default media query*/
 @media (min-width: 0px){
@@ -333,9 +355,10 @@ No media query for `xs` since this is the default */
   .formC{
     padding-top: 20px;
   }
+
   .projectsFlex{
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     flex-basis: 50%;
   }
 }
