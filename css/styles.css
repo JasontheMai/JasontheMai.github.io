@@ -49,6 +49,7 @@ html {
 }
 
 .centerImg{
+  width: 30%;
   display: block;
   margin: auto;
   padding-top: 20px;
