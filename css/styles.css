@@ -48,6 +48,28 @@ html {
   margin: auto;
 }
 
+.centerImg{
+  display: block;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.deviation{
+  display: block;
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.matrix{
+  display: block;
+  width: 70%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 
 /* centers the header*/
 .centerH1{
@@ -133,8 +155,9 @@ figcaption{
 
 .projectsFlex {
   display: flex;
-  flex-wrap: nowrap;
   padding-bottom: 40px;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .innerFlexProject {
@@ -291,6 +314,10 @@ td a{
   text-align: center;
 }
 
+h2{
+  padding-top: 30px;
+  font-size: 26px;  
+}
 
 #centerH2{
   padding-top: 20px;
@@ -336,9 +363,8 @@ Most of these change the flex to columns when the window is smaller
     padding-top: 20px;
   }
   .projectsFlex{
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex-basis: 50%;
+    flex-direction: column;
+    align-items: center;
   }
 }
 /* Small devices (landscape phones, 576px and up) */
@@ -357,10 +383,9 @@ Most of these change the flex to columns when the window is smaller
   }
 
   .projectsFlex{
-    flex-wrap: wrap;
-    flex-direction: column;
-    flex-basis: 50%;
+    flex-flow: row wrap;
   }
+ 
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -378,7 +403,6 @@ Most of these change the flex to columns when the window is smaller
     padding-top: 20px;
   }
   .projectsFlex{
-    flex-wrap: nowrap;
     flex-direction: row;
   }
 }
@@ -392,7 +416,6 @@ Most of these change the flex to columns when the window is smaller
     flex-direction: row;
   }
   .projectsFlex{
-    flex-wrap: nowrap;
     flex-direction: row;
   }
 
@@ -407,7 +430,6 @@ Most of these change the flex to columns when the window is smaller
     flex-direction: row;
   }
   .projectsFlex{
-    flex-wrap: nowrap;
     flex-direction: row;
   }
 }
