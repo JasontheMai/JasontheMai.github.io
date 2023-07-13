@@ -55,6 +55,11 @@ html {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+.enlargen{
+  transform: scale(160%);
+  padding-bottom: 50px;
+}
 .deviation{
   display: block;
   width: 80%;
