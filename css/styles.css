@@ -21,7 +21,10 @@ html {
   border: 0;
 }
 
-
+.enlargen{
+  transform: scale(160%);
+  padding-bottom: 50px;
+}
 /* no break */
 .nobr {
   white-space: nowrap;
