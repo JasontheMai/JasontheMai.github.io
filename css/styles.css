@@ -438,3 +438,11 @@ Most of these change the flex to columns when the window is smaller
     flex-direction: row;
   }
 }
+
+@media screen and (max-width: 600px) {
+  nav {
+      font-size: 16px; /* Adjust the font size for smaller screens */
+  }
+
+
+}
