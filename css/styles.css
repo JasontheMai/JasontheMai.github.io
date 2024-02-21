@@ -132,7 +132,7 @@ p{
 
 /*Modifies the layout of the 2 maps*/
 
-#mapDFAS, #mapLab {
+#mapDFAS, #mapLab, #mapPG{
   height: 400px;
   width: auto;
   margin-bottom: 80px;

@@ -46,6 +46,28 @@
 
             <h1>Work</h1>
 
+            <h2 id="centerH2">Procter and Gamble</h2>
+            <div class="workFlex">
+                <div class="carousel">
+                    <div><img src="images/P&GANDME.jpg">
+                    </div>
+                    <div><img class = "enlargen" src="images/P&GANDME.jpg">
+                    </div>
+                    <div>
+                        <img class = "enlargen" src="images/P&GANDME.jpg">
+                    </div>
+                </div>
+                <div>
+                    <h3>Data engineering intern</h3>
+                    <h3>Summer 2024</h3>
+                    <p>This summer, I will be working as a data engineer for Procter and Gamble. More updates
+                        to come!
+                    </p>
+                </div>
+            </div>
+            <div id="mapPG"></div>
+
+
             <h2 id="centerH2">Department of Defense Financial and Accounting Service</h2>
             <div class="workFlex">
                 <div class="carousel">
@@ -64,9 +86,9 @@
                 </div>
                 <div>
                     <h3>IT intern</h3>
-                    <h3>May 2023 to present</h3>
+                    <h3>May 2023 to November 2023</h3>
                     <h3>Security Clearence: Secret</h3>
-                    <p>This summer I had the oppertunity to intern with the Department of Defense's Financial and Accounting Service
+                    <p>During 2023, I had the amazing oppertunity to intern with the Department of Defense's Financial and Accounting Service
                         (DFAS) as an IT intern. As a part of the Enterprise Archecture team I was responsible for the governance
                         and policy making of the Microsoft Power Platform roll out to DFAS's over 12,000 employees. I also worked as a 
                         data analyst and I designed dashboards to help track and maintain the agencies 13,000 software licenses.
@@ -87,7 +109,7 @@
                     </div>
                     <div>
                         <img class="portrait" src="images/Cutie.jpg" alt="A wooden laser portrait of my friend and I">
-                        <p>Here's a portrait I laser cutted of my friend and I</p>
+                        <p>Here's a portrait I laser cutted of my girl friend and I</p>
                     </div>
                 </div>
                 <div>
@@ -150,6 +172,56 @@
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
         integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
     <script>
+
+        var mapPG = L.map('mapPG').setView([39.102700, -84.506650], 16);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(mapPG);
+
+        var markerPG = L.marker([39.102700, -84.506650]).addTo(mapPG);
+
+        var popupPG = L.popup()
+            .setLatLng([39.102700, -84.506650])
+            .setContent("Welcome to the P&G Global Office!");
+
+
+
+        mapPG.on('click', function (e) {
+            markerPG.bindPopup(popupPG).openPopup();
+        });
+
+
+
+        // create popup message
+        var popupMsg3 = L.popup({
+            closeButton: false,
+            autoClose: false,
+            closeOnClick: false,
+            className: 'popup-msg'
+        })
+            .setLatLng([39.103700, -84.506650])
+            .setContent('Click on the map to explore!');
+
+         // add popup message to the map
+         popupMsg3.addTo(mapPG);
+
+        // hide popup message when the user clicks on the map
+        mapPG.once('click', function () {
+            mapPG.closePopup(popupMsg3);
+        });
+
+        mapPG.on('click', function (e) {
+            if (!e.target._icon) {
+                L.popup()
+                    .setLatLng(e.latlng)
+                    .setContent('You clicked at ' + e.latlng.toString() + " that's not where I work!")
+                    .openOn(mapPG);
+            }
+        });
+
+        
+
         var mapDFAS = L.map('mapDFAS').setView([39.8533502930058, -86.01450209859141], 16);
 
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
