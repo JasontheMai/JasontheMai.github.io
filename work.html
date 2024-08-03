@@ -1,325 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
+  <!--
     I360 Web Design Template
 -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Jason Mai</title>
     <!-- resets browser defaults -->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <!-- custom styles -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
     <!-- icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <!-- slick javascript library -->
-    <link rel="stylesheet" type="text/css" href="plugins/slick-1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="plugins/slick-1.8.1/slick/slick-theme.css" />
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plugins/slick-1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plugins/slick-1.8.1/slick/slick-theme.css"
+    />
 
     <!-- Leaflet map library-->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+  </head>
 
-</head>
-
-
-<body>
-
+  <body>
     <div class="work">
+      <div class="container">
+        <nav>
+          <a href="index.html"><i class="fa fa-fw fa-home"></i> About</a>
+          <a href="projects.html"
+            ><i class="fa fa-cogs" aria-hidden="true"></i> Projects</a
+          >
+          <!--I know inline css is bad but this is litterally the only time I will use this code hence it is here-->
+          <a href="work.html" style="background-color: #588157"
+            ><i class="fa fa-code" aria-hidden="true"></i> Work</a
+          >
+          <a href="contact.html"
+            ><i class="fa fa-fw fa-envelope"></i> Contact</a
+          >
+          <a href="images/Resume.pdf"
+            ><i class="fa fa-file-text" aria-hidden="true"></i> Resume</a
+          >
+        </nav>
 
-        <div class="container">
-            <nav>
-                <a href="index.html"><i class="fa fa-fw fa-home"></i> About</a>
-                <a href="projects.html"><i class="fa fa-cogs" aria-hidden="true"></i> Projects</a>
-                <!--I know inline css is bad but this is litterally the only time I will use this code hence it is here-->
-                <a href="work.html" style="background-color: #588157;"><i class="fa fa-code" aria-hidden="true"></i> Work</a>
-                <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-                <a href="images/Resume.pdf"><i class="fa fa-file-text" aria-hidden="true"></i> Resume</a>
+        <h1>Work</h1>
 
-            </nav>
-
-            <h1>Work</h1>
-
-            <h2 id="centerH2">Procter and Gamble</h2>
-            <div class="workFlex">
-                <div class="carousel">
-                    <div><img src="images/P&GANDME.jpg">
-                    </div>
-                    <div><img class = "enlargen" src="images/P&GANDME.jpg">
-                    </div>
-                    <div>
-                        <img class = "enlargen" src="images/P&GANDME.jpg">
-                    </div>
-                </div>
-                <div>
-                    <h3>Data engineering intern</h3>
-                    <h3>Summer 2024</h3>
-                    <p>This summer, I will be working as a data engineer for Procter and Gamble. More updates
-                        to come!
-                    </p>
-                </div>
+        <h2 id="centerH2">Procter and Gamble</h2>
+        <div class="workFlex">
+          <div class="carousel">
+            <div><img src="images/Butterfly.jpg" /></div>
+            <div><img class="enlargen" src="images/queen_city.png" /></div>
+            <div>
+              <img class="enlargen" src="images/kings_island.PNG" />
             </div>
-            <div id="mapPG"></div>
-
-
-            <h2 id="centerH2">Department of Defense Financial and Accounting Service</h2>
-            <div class="workFlex">
-                <div class="carousel">
-                    <div><img src="images/machineGun.jpg"
-                            alt="Me with a machine gun">
-                    </div>
-                    <div><img class = "enlargen" src="images/Dummies.jpg"
-                            alt="Me with my friends!">
-                        <p>Me and my friends!</p>
-                    </div>
-                    <div>
-                        <img class = "enlargen" src="images/gunRange.jpg"
-                            alt="The team at a virtual gun range">
-                        <p>The team at a virtual gun range</p>
-                    </div>
-                </div>
-                <div>
-                    <h3>IT intern</h3>
-                    <h3>May 2023 to November 2023</h3>
-                    <h3>Security Clearence: Secret</h3>
-                    <p>During 2023, I had the amazing oppertunity to intern with the Department of Defense's Financial and Accounting Service
-                        (DFAS) as an IT intern. As a part of the Enterprise Archecture team I was responsible for the governance
-                        and policy making of the Microsoft Power Platform roll out to DFAS's over 12,000 employees. I also worked as a 
-                        data analyst and I designed dashboards to help track and maintain the agencies 13,000 software licenses.
-                    </p>
-                </div>
-            </div>
-            <div id="mapDFAS"></div>
-
-            <h2 id="centerH2">Indiana University</h2>
-
-            <div class="workFlex">
-                <div class="carousel">
-                    <div><img class="duck" src="images/duck.jpg" alt="A giant wooden duck I laser cutted and assembled">
-                        <p>Alfred is a 1.5 feet tall duck that I laser cutted and assembled</p>
-                    </div>
-                    <div><img class="potter" src="images/Potter.jpg" alt="A potter with a half eaten plant my cat ate">
-                        <p>This is a cute pot I made for storing plants. My cat ate half of it :(</p>
-                    </div>
-                    <div>
-                        <img class="portrait" src="images/Cutie.jpg" alt="A wooden laser portrait of my friend and I">
-                        <p>Here's a portrait I laser cutted of my girl friend and I</p>
-                    </div>
-                </div>
-                <div>
-                    <h3>Maker Space Lab Technician</h3>
-                    <h3>November 2021 to present</h3>
-                    <p>I currently work as lab technician for the makerspace engineering labs across Indiana University.
-                        My
-                        daily
-                        duties includes machine maintenance, leading workshops , and
-                        helping researchers, students, and professors with their engineering needs.
-                        Our labs have a wide selection of machines and tools including laser cutters, table saws, 3D
-                        printers,
-                        heat presses,
-                        CNC routers, soldering, and a variety of other engineering tools. If you need help with any of
-                        your
-                        projects, definitely stop by
-                        one of our labs!
-                    </p>
-                </div>
-            </div>
-            <div id="mapLab"></div>
-
+          </div>
+          <div>
+            <h3>Data engineering intern</h3>
+            <h3>May 2024 to August 2024</h3>
+            <p>
+              During 2024, I got to work as a data engineer for Procter and
+              Gamble. I primarily worked on a data model that analyzed customer
+              loyalty data from millions of Meijer customers and billions of
+              sales data. I was reposnible for design ETL operations to clean up
+              and move the data. My project is estimated to have saved 1.5
+              million dollars in oppertunity costs and 300 hours per year.
+            </p>
+          </div>
         </div>
+        <div id="mapPG"></div>
 
+        <h2 id="centerH2">
+          Department of Defense Financial and Accounting Service
+        </h2>
+        <div class="workFlex">
+          <div class="carousel">
+            <div>
+              <img src="images/machineGun.jpg" alt="Me with a machine gun" />
+            </div>
+            <div>
+              <img
+                class="enlargen"
+                src="images/Dummies.jpg"
+                alt="Me with my friends!"
+              />
+              <p>Me and my friends!</p>
+            </div>
+            <div>
+              <img
+                class="enlargen"
+                src="images/gunRange.jpg"
+                alt="The team at a virtual gun range"
+              />
+              <p>The team at a virtual gun range</p>
+            </div>
+          </div>
+          <div>
+            <h3>IT intern</h3>
+            <h3>May 2023 to November 2023</h3>
+            <h3>Security Clearence: Secret</h3>
+            <p>
+              During 2023, I had the amazing oppertunity to intern with the
+              Department of Defense's Financial and Accounting Service (DFAS) as
+              an IT intern. As a part of the Enterprise Archecture team I was
+              responsible for the governance and policy making of the Microsoft
+              Power Platform roll out to DFAS's over 12,000 employees. I also
+              worked as a data analyst and I designed dashboards to help track
+              and maintain the agencies 13,000 software licenses.
+            </p>
+          </div>
+        </div>
+        <div id="mapDFAS"></div>
+
+        <h2 id="centerH2">Indiana University</h2>
+
+        <div class="workFlex">
+          <div class="carousel">
+            <div>
+              <img
+                class="duck"
+                src="images/duck.jpg"
+                alt="A giant wooden duck I laser cutted and assembled"
+              />
+              <p>
+                Alfred is a 1.5 feet tall duck that I laser cutted and assembled
+              </p>
+            </div>
+            <div>
+              <img
+                class="potter"
+                src="images/Potter.jpg"
+                alt="A potter with a half eaten plant my cat ate"
+              />
+              <p>
+                This is a cute pot I made for storing plants. My cat ate half of
+                it :(
+              </p>
+            </div>
+            <div>
+              <img
+                class="portrait"
+                src="images/Cutie.jpg"
+                alt="A wooden laser portrait of my friend and I"
+              />
+              <p>Here's a portrait I laser cutted of my girl friend and I</p>
+            </div>
+          </div>
+          <div>
+            <h3>Maker Space Lab Technician</h3>
+            <h3>November 2021 to present</h3>
+            <p>
+              I currently work as lab technician for the makerspace engineering
+              labs across Indiana University. My daily duties includes machine
+              maintenance, leading workshops , and helping researchers,
+              students, and professors with their engineering needs. Our labs
+              have a wide selection of machines and tools including laser
+              cutters, table saws, 3D printers, heat presses, CNC routers,
+              soldering, and a variety of other engineering tools. If you need
+              help with any of your projects, definitely stop by one of our
+              labs!
+            </p>
+          </div>
+        </div>
+        <div id="mapLab"></div>
+      </div>
     </div>
-
-
-
 
     <!-- javascript stuff -->
     <!-- javascript stuff -->
     <!-- <script src="js/nav.js"></script> -->
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="plugins/slick-1.8.1/slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="plugins/slick-1.8.1/slick/slick.min.js"
+    ></script>
 
     <!-- slick javascript library -->
     <script type="text/javascript">
-
+      $(document).ready(function () {
         $(document).ready(function () {
-            $(document).ready(function () {
-                $('.carousel').slick({
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: true,
-                    dots: true,
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                    infinite: true
-                });
-            });
+          $(".carousel").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            infinite: true,
+          });
         });
+      });
     </script>
-
-
 
     <!--CREATed  maps for both the places I work. I also made it so that when you click on a pin, a message pops up
     but when you don't it spits out the coordinates and makes fun of you-->
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
     <script>
+      var mapPG = L.map("mapPG").setView([39.1027, -84.50665], 16);
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution:
+          '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      }).addTo(mapPG);
 
-        var mapPG = L.map('mapPG').setView([39.102700, -84.506650], 16);
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(mapPG);
+      var markerPG = L.marker([39.1027, -84.50665]).addTo(mapPG);
 
-        var markerPG = L.marker([39.102700, -84.506650]).addTo(mapPG);
+      var popupPG = L.popup()
+        .setLatLng([39.1027, -84.50665])
+        .setContent("Welcome to the P&G Global Office!");
 
-        var popupPG = L.popup()
-            .setLatLng([39.102700, -84.506650])
-            .setContent("Welcome to the P&G Global Office!");
+      mapPG.on("click", function (e) {
+        markerPG.bindPopup(popupPG).openPopup();
+      });
 
+      // create popup message
+      var popupMsg3 = L.popup({
+        closeButton: false,
+        autoClose: false,
+        closeOnClick: false,
+        className: "popup-msg",
+      })
+        .setLatLng([39.1037, -84.50665])
+        .setContent("Click on the map to explore!");
 
+      // add popup message to the map
+      popupMsg3.addTo(mapPG);
 
-        mapPG.on('click', function (e) {
-            markerPG.bindPopup(popupPG).openPopup();
-        });
+      // hide popup message when the user clicks on the map
+      mapPG.once("click", function () {
+        mapPG.closePopup(popupMsg3);
+      });
 
+      mapPG.on("click", function (e) {
+        if (!e.target._icon) {
+          L.popup()
+            .setLatLng(e.latlng)
+            .setContent(
+              "You clicked at " +
+                e.latlng.toString() +
+                " that's not where I work!"
+            )
+            .openOn(mapPG);
+        }
+      });
 
+      var mapDFAS = L.map("mapDFAS").setView(
+        [39.8533502930058, -86.01450209859141],
+        16
+      );
 
-        // create popup message
-        var popupMsg3 = L.popup({
-            closeButton: false,
-            autoClose: false,
-            closeOnClick: false,
-            className: 'popup-msg'
-        })
-            .setLatLng([39.103700, -84.506650])
-            .setContent('Click on the map to explore!');
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution:
+          '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      }).addTo(mapDFAS);
 
-         // add popup message to the map
-         popupMsg3.addTo(mapPG);
+      var markerDFAS = L.marker([39.8533502930058, -86.01450209859141]).addTo(
+        mapDFAS
+      );
 
-        // hide popup message when the user clicks on the map
-        mapPG.once('click', function () {
-            mapPG.closePopup(popupMsg3);
-        });
+      var popupDFAS = L.popup()
+        .setLatLng([39.8539702930058, -86.01450209859141])
+        .setContent("Welcome to the DFAS!");
 
-        mapPG.on('click', function (e) {
-            if (!e.target._icon) {
-                L.popup()
-                    .setLatLng(e.latlng)
-                    .setContent('You clicked at ' + e.latlng.toString() + " that's not where I work!")
-                    .openOn(mapPG);
-            }
-        });
+      mapDFAS.on("click", function (e) {
+        markerDFAS.bindPopup(popupDFAS).openPopup();
+      });
 
-        
+      // create popup message
+      var popupMsg = L.popup({
+        closeButton: false,
+        autoClose: false,
+        closeOnClick: false,
+        className: "popup-msg",
+      })
+        .setLatLng([39.8513502930058, -86.01450209859141])
+        .setContent("Click on the map to explore!");
 
-        var mapDFAS = L.map('mapDFAS').setView([39.8533502930058, -86.01450209859141], 16);
+      // add popup message to the map
+      popupMsg.addTo(mapDFAS);
 
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(mapDFAS);
+      // hide popup message when the user clicks on the map
+      mapDFAS.once("click", function () {
+        mapDFAS.closePopup(popupMsg);
+      });
 
-        var markerDFAS = L.marker([39.8533502930058, -86.01450209859141]).addTo(mapDFAS);
+      var mapLab = L.map("mapLab").setView(
+        [39.172090780238385, -86.51792475036443],
+        16
+      );
 
-        var popupDFAS = L.popup()
-            .setLatLng([39.8539702930058, -86.01450209859141])
-            .setContent("Welcome to the DFAS!");
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution:
+          '&copy; <a href="http://www.openstreetmap.org/">OpenStreetMap</a>',
+      }).addTo(mapLab);
 
+      var protoLabMarker = L.marker([
+        39.17222654230661, -86.52294221874195,
+      ]).addTo(mapLab);
+      var luddyLabsMarker = L.marker([
+        39.17287886290465, -86.5232805278997,
+      ]).addTo(mapLab);
+      var LLCLabMarker = L.marker([
+        39.17055872601463, -86.51297510991343,
+      ]).addTo(mapLab);
 
+      protoLabMarker.bindPopup("Welcome to Proto Lab 1!");
+      luddyLabsMarker.bindPopup(
+        "Luddy is the home of the Fabrication Lab and Proto Lab 2"
+      );
+      LLCLabMarker.bindPopup(
+        "The LLC lab is located in the home of the Luddy LLC"
+      );
 
-        mapDFAS.on('click', function (e) {
-            markerDFAS.bindPopup(popupDFAS).openPopup();
-        });
+      mapDFAS.on("click", function (e) {
+        if (!e.target._icon) {
+          L.popup()
+            .setLatLng(e.latlng)
+            .setContent(
+              "You clicked at " +
+                e.latlng.toString() +
+                " that's not where I work!"
+            )
+            .openOn(mapDFAS);
+        }
+      });
+      mapLab.once("click", function () {
+        mapLab.closePopup(popupMsg2);
+      });
 
+      mapLab.on("click", function (e) {
+        if (!e.target._icon) {
+          L.popup()
+            .setLatLng(e.latlng)
+            .setContent(
+              "You clicked at " +
+                e.latlng.toString() +
+                " that's not where I work!"
+            )
+            .openOn(mapLab);
+        }
+      });
 
+      // create popup message
+      var popupMsg2 = L.popup({
+        closeButton: false,
+        autoClose: false,
+        closeOnClick: false,
+        className: "popup-msg",
+      })
+        .setLatLng([39.17222654230661, -86.51794221874195])
+        .setContent("Click on the map to explore!");
 
-        // create popup message
-        var popupMsg = L.popup({
-            closeButton: false,
-            autoClose: false,
-            closeOnClick: false,
-            className: 'popup-msg'
-        })
-            .setLatLng([39.8513502930058, -86.01450209859141])
-            .setContent('Click on the map to explore!');
-
-        // add popup message to the map
-        popupMsg.addTo(mapDFAS);
-
-        // hide popup message when the user clicks on the map
-        mapDFAS.once('click', function () {
-            mapDFAS.closePopup(popupMsg);
-        });
-
-
-        var mapLab = L.map('mapLab').setView([39.172090780238385, -86.51792475036443], 16);
-
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/">OpenStreetMap</a>'
-        }).addTo(mapLab);
-
-        var protoLabMarker = L.marker([39.17222654230661, -86.52294221874195]).addTo(mapLab);
-        var luddyLabsMarker = L.marker([39.17287886290465, -86.5232805278997]).addTo(mapLab);
-        var LLCLabMarker = L.marker([39.17055872601463, -86.51297510991343]).addTo(mapLab);
-
-        protoLabMarker.bindPopup("Welcome to Proto Lab 1!")
-        luddyLabsMarker.bindPopup("Luddy is the home of the Fabrication Lab and Proto Lab 2")
-        LLCLabMarker.bindPopup("The LLC lab is located in the home of the Luddy LLC")
-
-
-
-        mapDFAS.on('click', function (e) {
-            if (!e.target._icon) {
-                L.popup()
-                    .setLatLng(e.latlng)
-                    .setContent('You clicked at ' + e.latlng.toString() + " that's not where I work!")
-                    .openOn(mapDFAS);
-            }
-        });
-        mapLab.once('click', function () {
-            mapLab.closePopup(popupMsg2);
-        });
-
-        mapLab.on('click', function (e) {
-
-            if (!e.target._icon) {
-                L.popup()
-                    .setLatLng(e.latlng)
-                    .setContent('You clicked at ' + e.latlng.toString() + " that's not where I work!")
-                    .openOn(mapLab);
-            }
-        });
-
-
-        // create popup message
-        var popupMsg2 = L.popup({
-            closeButton: false,
-            autoClose: false,
-            closeOnClick: false,
-            className: 'popup-msg'
-        })
-            .setLatLng([39.17222654230661, -86.51794221874195])
-            .setContent('Click on the map to explore!');
-
-        // add popup message to the map
-        popupMsg2.addTo(mapLab);
-
+      // add popup message to the map
+      popupMsg2.addTo(mapLab);
     </script>
-
-
-
-
-</body>
-
+  </body>
 </html>
